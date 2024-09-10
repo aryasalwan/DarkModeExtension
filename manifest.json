@@ -1,0 +1,12 @@
+{
+    "name":"Dark Mode",
+    "version": "1.0",
+    "manifest_version":3,
+    "author":"Arya",
+    "permissions":["activeTab", "scripting","tabs","storage"],
+    "action":{
+        "default_popup":"index.html",
+        "default_title":"Dark Mode"
+    }
+    
+}   

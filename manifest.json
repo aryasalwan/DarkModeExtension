@@ -3,7 +3,16 @@
     "version": "1.0",
     "manifest_version":3,
     "author":"Arya",
-    "permissions":["activeTab", "scripting","tabs","storage"],
+    "content_scripts": [
+        {
+        "matches":["https://online.mun.ca/d2l/*"],
+        "js": ["content.js"]
+        }
+        ],
+    "icons":{
+        "128": "dm_icon.png"
+    },
+    "permissions":["scripting","storage"],
     "action":{
         "default_popup":"index.html",
         "default_title":"Dark Mode"
